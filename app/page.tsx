@@ -80,7 +80,7 @@ export default async function Index() {
           <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
           <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center my-12">
             The fastest way to start building apps with{' '}
-            <strong>Supabase</strong> and <strong>Next.js</strong>
+            <strong>Supabase</strong> and <strong>Next.js TEST</strong>
           </p>
           <div className="bg-foreground py-3 px-6 rounded-lg font-mono text-sm text-background">
             Get started by editing <strong>app/page.tsx</strong>
