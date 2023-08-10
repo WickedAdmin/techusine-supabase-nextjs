@@ -1,9 +1,11 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
+import Image from 'next/image'
 import Link from 'next/link'
 import LogoutButton from '../components/LogoutButton'
 import SupabaseLogo from '../components/SupabaseLogo'
 import NextJsLogo from '../components/NextJsLogo'
+import testlogo from '_images/full-size techuisine logo.png'
 
 export const dynamic = 'force-dynamic'
 
@@ -47,9 +49,15 @@ export default async function Index() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-        <div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm text-foreground">
-          <div />
+      <nav className="w-full flex justify-center h-20">
+        <div className="w-full max-w-full flex justify-between items-center p-3 text-sm text-foreground">
+            <Image
+              src={testlogo}
+              alt="Tech Logo"
+              style={{
+                width: 'auto',
+                maxHeight: '100%'
+              }}></Image>
           <div>
             {user ? (
               <div className="flex items-center gap-4">
